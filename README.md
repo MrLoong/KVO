@@ -657,7 +657,7 @@
 
 看一下效果：
 
-![](image/KVO/2.gif)  
+![](image/kvo/2.gif)  
 
 
 ## 观察者模式
