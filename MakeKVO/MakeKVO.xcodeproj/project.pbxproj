@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C25562B1CB3F268005F1280 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C25562A1CB3F268005F1280 /* main.m */; };
+		6C25562E1CB3F268005F1280 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C25562D1CB3F268005F1280 /* AppDelegate.m */; };
+		6C2556311CB3F268005F1280 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2556301CB3F268005F1280 /* ViewController.m */; };
+		6C2556341CB3F268005F1280 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2556321CB3F268005F1280 /* Main.storyboard */; };
+		6C2556371CB3F268005F1280 /* MakeKVO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C2556351CB3F268005F1280 /* MakeKVO.xcdatamodeld */; };
+		6C2556391CB3F268005F1280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C2556381CB3F268005F1280 /* Assets.xcassets */; };
+		6C25563C1CB3F268005F1280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C25563A1CB3F268005F1280 /* LaunchScreen.storyboard */; };
+		6C2556471CB3F268005F1280 /* MakeKVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2556461CB3F268005F1280 /* MakeKVOTests.m */; };
+		6C2556521CB3F268005F1280 /* MakeKVOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2556511CB3F268005F1280 /* MakeKVOUITests.m */; };
+		6C2556611CB3F2A0005F1280 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2556601CB3F2A0005F1280 /* NSObject+KVO.m */; };
+		6C2556661CB4ABCA005F1280 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2556651CB4ABCA005F1280 /* Model.m */; };
+		6C2556691CB6B805005F1280 /* ObserverInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2556681CB6B805005F1280 /* ObserverInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C2556431CB3F268005F1280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C25561E1CB3F268005F1280 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C2556251CB3F268005F1280;
+			remoteInfo = MakeKVO;
+		};
+		6C25564E1CB3F268005F1280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C25561E1CB3F268005F1280 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C2556251CB3F268005F1280;
+			remoteInfo = MakeKVO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C2556261CB3F268005F1280 /* MakeKVO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeKVO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C25562A1CB3F268005F1280 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6C25562C1CB3F268005F1280 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6C25562D1CB3F268005F1280 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6C25562F1CB3F268005F1280 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6C2556301CB3F268005F1280 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6C2556331CB3F268005F1280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C2556361CB3F268005F1280 /* MakeKVO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MakeKVO.xcdatamodel; sourceTree = "<group>"; };
+		6C2556381CB3F268005F1280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C25563B1CB3F268005F1280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C25563D1CB3F268005F1280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C2556421CB3F268005F1280 /* MakeKVOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeKVOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2556461CB3F268005F1280 /* MakeKVOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeKVOTests.m; sourceTree = "<group>"; };
+		6C2556481CB3F268005F1280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C25564D1CB3F268005F1280 /* MakeKVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeKVOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2556511CB3F268005F1280 /* MakeKVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeKVOUITests.m; sourceTree = "<group>"; };
+		6C2556531CB3F268005F1280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C25565F1CB3F2A0005F1280 /* NSObject+KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+KVO.h"; path = "NSObject+KVO/NSObject+KVO.h"; sourceTree = "<group>"; };
+		6C2556601CB3F2A0005F1280 /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+KVO.m"; path = "NSObject+KVO/NSObject+KVO.m"; sourceTree = "<group>"; };
+		6C2556641CB4ABCA005F1280 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = MOdel/Model.h; sourceTree = "<group>"; };
+		6C2556651CB4ABCA005F1280 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = MOdel/Model.m; sourceTree = "<group>"; };
+		6C2556671CB6B805005F1280 /* ObserverInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObserverInfo.h; path = MOdel/ObserverInfo.h; sourceTree = "<group>"; };
+		6C2556681CB6B805005F1280 /* ObserverInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObserverInfo.m; path = MOdel/ObserverInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C2556231CB3F268005F1280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C25563F1CB3F268005F1280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C25564A1CB3F268005F1280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C25561D1CB3F268005F1280 = {
+			isa = PBXGroup;
+			children = (
+				6C2556281CB3F268005F1280 /* MakeKVO */,
+				6C2556451CB3F268005F1280 /* MakeKVOTests */,
+				6C2556501CB3F268005F1280 /* MakeKVOUITests */,
+				6C2556271CB3F268005F1280 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C2556271CB3F268005F1280 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C2556261CB3F268005F1280 /* MakeKVO.app */,
+				6C2556421CB3F268005F1280 /* MakeKVOTests.xctest */,
+				6C25564D1CB3F268005F1280 /* MakeKVOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C2556281CB3F268005F1280 /* MakeKVO */ = {
+			isa = PBXGroup;
+			children = (
+				6C2556631CB4ABB3005F1280 /* Model */,
+				6C2556621CB3F2AB005F1280 /* NSObject+KVO */,
+				6C25562C1CB3F268005F1280 /* AppDelegate.h */,
+				6C25562D1CB3F268005F1280 /* AppDelegate.m */,
+				6C25562F1CB3F268005F1280 /* ViewController.h */,
+				6C2556301CB3F268005F1280 /* ViewController.m */,
+				6C2556321CB3F268005F1280 /* Main.storyboard */,
+				6C2556381CB3F268005F1280 /* Assets.xcassets */,
+				6C25563A1CB3F268005F1280 /* LaunchScreen.storyboard */,
+				6C25563D1CB3F268005F1280 /* Info.plist */,
+				6C2556351CB3F268005F1280 /* MakeKVO.xcdatamodeld */,
+				6C2556291CB3F268005F1280 /* Supporting Files */,
+			);
+			path = MakeKVO;
+			sourceTree = "<group>";
+		};
+		6C2556291CB3F268005F1280 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C25562A1CB3F268005F1280 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C2556451CB3F268005F1280 /* MakeKVOTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C2556461CB3F268005F1280 /* MakeKVOTests.m */,
+				6C2556481CB3F268005F1280 /* Info.plist */,
+			);
+			path = MakeKVOTests;
+			sourceTree = "<group>";
+		};
+		6C2556501CB3F268005F1280 /* MakeKVOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C2556511CB3F268005F1280 /* MakeKVOUITests.m */,
+				6C2556531CB3F268005F1280 /* Info.plist */,
+			);
+			path = MakeKVOUITests;
+			sourceTree = "<group>";
+		};
+		6C2556621CB3F2AB005F1280 /* NSObject+KVO */ = {
+			isa = PBXGroup;
+			children = (
+				6C25565F1CB3F2A0005F1280 /* NSObject+KVO.h */,
+				6C2556601CB3F2A0005F1280 /* NSObject+KVO.m */,
+				6C2556671CB6B805005F1280 /* ObserverInfo.h */,
+				6C2556681CB6B805005F1280 /* ObserverInfo.m */,
+			);
+			name = "NSObject+KVO";
+			sourceTree = "<group>";
+		};
+		6C2556631CB4ABB3005F1280 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C2556641CB4ABCA005F1280 /* Model.h */,
+				6C2556651CB4ABCA005F1280 /* Model.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C2556251CB3F268005F1280 /* MakeKVO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C2556561CB3F268005F1280 /* Build configuration list for PBXNativeTarget "MakeKVO" */;
+			buildPhases = (
+				6C2556221CB3F268005F1280 /* Sources */,
+				6C2556231CB3F268005F1280 /* Frameworks */,
+				6C2556241CB3F268005F1280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MakeKVO;
+			productName = MakeKVO;
+			productReference = 6C2556261CB3F268005F1280 /* MakeKVO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C2556411CB3F268005F1280 /* MakeKVOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C2556591CB3F268005F1280 /* Build configuration list for PBXNativeTarget "MakeKVOTests" */;
+			buildPhases = (
+				6C25563E1CB3F268005F1280 /* Sources */,
+				6C25563F1CB3F268005F1280 /* Frameworks */,
+				6C2556401CB3F268005F1280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C2556441CB3F268005F1280 /* PBXTargetDependency */,
+			);
+			name = MakeKVOTests;
+			productName = MakeKVOTests;
+			productReference = 6C2556421CB3F268005F1280 /* MakeKVOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C25564C1CB3F268005F1280 /* MakeKVOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C25565C1CB3F268005F1280 /* Build configuration list for PBXNativeTarget "MakeKVOUITests" */;
+			buildPhases = (
+				6C2556491CB3F268005F1280 /* Sources */,
+				6C25564A1CB3F268005F1280 /* Frameworks */,
+				6C25564B1CB3F268005F1280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C25564F1CB3F268005F1280 /* PBXTargetDependency */,
+			);
+			name = MakeKVOUITests;
+			productName = MakeKVOUITests;
+			productReference = 6C25564D1CB3F268005F1280 /* MakeKVOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C25561E1CB3F268005F1280 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = LastDays;
+				TargetAttributes = {
+					6C2556251CB3F268005F1280 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 637MP4Y88D;
+					};
+					6C2556411CB3F268005F1280 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 637MP4Y88D;
+						TestTargetID = 6C2556251CB3F268005F1280;
+					};
+					6C25564C1CB3F268005F1280 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 637MP4Y88D;
+						TestTargetID = 6C2556251CB3F268005F1280;
+					};
+				};
+			};
+			buildConfigurationList = 6C2556211CB3F268005F1280 /* Build configuration list for PBXProject "MakeKVO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C25561D1CB3F268005F1280;
+			productRefGroup = 6C2556271CB3F268005F1280 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C2556251CB3F268005F1280 /* MakeKVO */,
+				6C2556411CB3F268005F1280 /* MakeKVOTests */,
+				6C25564C1CB3F268005F1280 /* MakeKVOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C2556241CB3F268005F1280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C25563C1CB3F268005F1280 /* LaunchScreen.storyboard in Resources */,
+				6C2556391CB3F268005F1280 /* Assets.xcassets in Resources */,
+				6C2556341CB3F268005F1280 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C2556401CB3F268005F1280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C25564B1CB3F268005F1280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C2556221CB3F268005F1280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2556311CB3F268005F1280 /* ViewController.m in Sources */,
+				6C25562E1CB3F268005F1280 /* AppDelegate.m in Sources */,
+				6C2556611CB3F2A0005F1280 /* NSObject+KVO.m in Sources */,
+				6C2556661CB4ABCA005F1280 /* Model.m in Sources */,
+				6C2556371CB3F268005F1280 /* MakeKVO.xcdatamodeld in Sources */,
+				6C2556691CB6B805005F1280 /* ObserverInfo.m in Sources */,
+				6C25562B1CB3F268005F1280 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C25563E1CB3F268005F1280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2556471CB3F268005F1280 /* MakeKVOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C2556491CB3F268005F1280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2556521CB3F268005F1280 /* MakeKVOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C2556441CB3F268005F1280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C2556251CB3F268005F1280 /* MakeKVO */;
+			targetProxy = 6C2556431CB3F268005F1280 /* PBXContainerItemProxy */;
+		};
+		6C25564F1CB3F268005F1280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C2556251CB3F268005F1280 /* MakeKVO */;
+			targetProxy = 6C25564E1CB3F268005F1280 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C2556321CB3F268005F1280 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C2556331CB3F268005F1280 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C25563A1CB3F268005F1280 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C25563B1CB3F268005F1280 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C2556541CB3F268005F1280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C2556551CB3F268005F1280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C2556571CB3F268005F1280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MakeKVO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uit.lastdays.MakeKVO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6C2556581CB3F268005F1280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MakeKVO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uit.lastdays.MakeKVO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C25565A1CB3F268005F1280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MakeKVOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uit.lastdays.MakeKVOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MakeKVO.app/MakeKVO";
+			};
+			name = Debug;
+		};
+		6C25565B1CB3F268005F1280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MakeKVOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uit.lastdays.MakeKVOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MakeKVO.app/MakeKVO";
+			};
+			name = Release;
+		};
+		6C25565D1CB3F268005F1280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MakeKVOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uit.lastdays.MakeKVOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MakeKVO;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6C25565E1CB3F268005F1280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MakeKVOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uit.lastdays.MakeKVOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MakeKVO;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C2556211CB3F268005F1280 /* Build configuration list for PBXProject "MakeKVO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C2556541CB3F268005F1280 /* Debug */,
+				6C2556551CB3F268005F1280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C2556561CB3F268005F1280 /* Build configuration list for PBXNativeTarget "MakeKVO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C2556571CB3F268005F1280 /* Debug */,
+				6C2556581CB3F268005F1280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C2556591CB3F268005F1280 /* Build configuration list for PBXNativeTarget "MakeKVOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C25565A1CB3F268005F1280 /* Debug */,
+				6C25565B1CB3F268005F1280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C25565C1CB3F268005F1280 /* Build configuration list for PBXNativeTarget "MakeKVOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C25565D1CB3F268005F1280 /* Debug */,
+				6C25565E1CB3F268005F1280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6C2556351CB3F268005F1280 /* MakeKVO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6C2556361CB3F268005F1280 /* MakeKVO.xcdatamodel */,
+			);
+			currentVersion = 6C2556361CB3F268005F1280 /* MakeKVO.xcdatamodel */;
+			path = MakeKVO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6C25561E1CB3F268005F1280 /* Project object */;
+}
